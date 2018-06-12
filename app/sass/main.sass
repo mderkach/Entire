@@ -1,0 +1,450 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+text-right
+    text-align: right
+
+b, strong
+	font-weight: bold
+
+p
+    color: #373b42
+    font-family: "SourceSansRegular"
+    font-size: 16px
+    font-weight: 400
+    line-height: 22px
+    margin-bottom: 0
+h1
+    color: $background
+    font-family: "PlexSansBold"
+    font-size: 45px
+    font-weight: 700
+.screen
+    background-size: 100% 100%!important
+header
+    padding: 20px 0
+.logo-main
+    width: 70px
+    height: 70px
+    margin-right: 21px
+.logo-descr
+    color: #151a1c
+    font-family: "PlexSansMedium"
+    font-size: 18px
+    font-weight: 500
+    line-height: 24px
+    margin: 0
+.header-bullit
+.header-bullit-descr
+    font-size: 16px
+    font-weight: 400
+    line-height: 22px
+.check
+    margin-right: 9px
+    margin-top: 5px
+.contacts-pre
+    font-size: 16px
+    margin-bottom: 15px
+.contacts-nubmer
+    font-family: "SourceSansSemiBold"
+    font-size: 22px
+    margin-bottom: 12px
+    
+
+.main-screen
+    background: url('../img/bg-main.jpg') no-repeat
+    padding: 90px 0 115px
+    
+.main-bullit-row
+    margin: 80px 0 88px
+.bullit-descr
+    position: relative
+    top: -6px
+    margin-left: 20px
+    color: $background
+    font-family: "SourceSansRegular"
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+.dotted-top
+    position: absolute
+    top: -35px
+    right: -15px
+.dotted-bottom
+    position: absolute
+    bottom: 0
+    right: 0
+.btn
+    border-radius: 5px
+    color: $background
+    height: 70px
+    text-transform: uppercase
+.green-btn
+    font-family: "PlexSansBold"
+    font-size: 16px
+    font-weight: 700
+    background-color: #2ec06d
+    padding-left: 29px
+    padding-right: 30px
+    &:hover
+        background-color: #259a57
+        cursor: pointer
+.white-btn
+    font-family: "SourceSansBold"
+    font-size: 17px
+    font-weight: 700
+    border: 2px solid #2ec06d
+    padding-left: 20px
+    padding-right: 39px
+    background: transparent
+    &:hover
+        color: #2ec06d
+    
+.second-screen
+    background: url('../img/bg2.jpg') no-repeat
+    
+    padding-top: 60px
+.second-bullet-row
+    padding: 60px 0
+.bullet_item
+    background: $background
+    padding: 15px
+    img
+        margin-bottom: 30px
+    p
+        font-family: "SourceSansSemiBold"
+        font-size: 18px
+        font-weight: 400
+.counter
+    color: $background
+    background-color: #4a5b68
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    text-align: center
+    vertical-align: middle
+    margin-bottom: 0
+.warning-wrapper
+    margin: 0 auto
+.warning
+    background: url('../img/warning-bg.jpg') no-repeat
+    background-size: 100%
+    padding: 40px
+    height: 174px
+    width: 100%
+    p
+        font-family: "SourceSansRegular"
+        font-size: 24px
+        font-weight: 400
+        line-height: 32px
+        color: $background
+        span
+            font-family: "SourceSansBold"
+.icon-wrapper
+    width: 94px
+    height: 94px
+    background-color: #e6f2fd
+    box-shadow: 0 8px 10px rgba(14, 20, 24, 0.1)
+    border-radius: 50%
+    margin-right: 40px
+    img
+        margin: 26px 22px 18px 22px
+ 
+.third-screen
+    padding: 60px 0
+.third-screen 
+    h2
+        font-family: "PlexSansBold"
+        font-size: 36px
+        font-weight: 700
+.slider-item
+    padding: 40px 66px 40px 30px
+    margin-top: 40px
+    border-radius: 6px
+    background-color: #eff2f6
+    h3
+        font-family: "SourceSansSemiBold"
+        font-size: 28px
+        font-weight: 400
+        line-height: 32px
+        margin-bottom: 40px
+.left-side, .right-side
+    padding: 0
+.left-side
+    p
+        color: #151a1c
+        font-family: "SourceSansRegular"
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        span
+            color: #49555f
+            font-family: "SourceSansSemiBold"
+            font-weight: 600
+    .green-btn
+        padding: 0 23px 
+        font-family: "SourceSansSemiBold"
+        font-size: 16px
+        font-weight: 400
+        line-height: 32px
+        margin-top: 30px
+        box-sizing: border-box
+        max-width: 190px
+        height: 45px
+        text-transform: none
+.line
+    background-color: #c8d4dd
+.hl
+    width: 100%
+    height: 1px
+    margin: 20px auto
+.vl
+    width: 1px
+    height: 100%
+    margin: 0 auto
+.slider-descr
+    margin-bottom: 30px
+    p
+        font-family: "SourceSansItalic"
+        font-size: 16px
+        font-style: italic
+        line-height: 24px
+.reviewer-icon
+    width: 39px
+    height: 39px
+    margin-right: 15px
+.reviewer-name
+    font-family: "SourceSansSemiBold"
+    font-size: 20px
+    font-weight: 400
+    line-height: 32px
+    
+.slick-dots
+    position: relative
+    margin-top: 40px
+    margin-bottom: 60px
+    li 
+        button
+            &:before
+                opacity: 1
+                border-radius: 50%
+                border: 3px solid #fff
+                color: transparent
+                width: 16px
+                height: 16px
+                background: #000
+                opacity: 1
+
+    li.slick-active 
+            button
+                &:before
+                    border: 3px solid #006ce2
+                    background: #fff
+                    color: transparent
+
+.slick-prev, .slick-next
+    top: 47%
+    i
+        color: #4a5b68
+        font-size: 32px
+    &:hover
+
+        i
+            color: #2ec06d
+
+
+        
+.fourth-screen
+    background: url('../img/bg3.jpg') no-repeat
+.consulting
+    padding: 60px 0 70px 0
+    .line
+        margin: 40px 0
+.consulting-item
+    p
+        color: $background
+        font-family: "PlexSansSemiBold"
+        font-size: 22px
+        font-weight: 400
+    .btn
+        max-width: 540px
+        width: 100%
+
+.fifth-screen
+    background: url('../img/bg4.jpg') no-repeat
+    
+    padding: 98px 0
+.blank-descr
+    h2
+        color: #151a1c
+        font-family: "PlexSansBold"
+        font-size: 36px
+        font-weight: 700
+        span
+            color: #006ce2
+    .hl
+        height: 3px
+        background-color: #151a1c
+        max-width: 68px
+        margin: 30px 0
+    p
+        font-family: "SourceSansRegular"
+        font-size: 24px
+        font-weight: 400
+        line-height: 32px
+        color: #49555f
+.relative
+    position: relative
+.blank
+    z-index: 10
+    position: absolute
+    right: 38px
+    top: -40px
+    box-sizing: border-box
+    width: 302px
+    height: 422px
+    box-shadow: 0 15px 30px rgba(24, 35, 44, 0.15)
+    border: 11px solid #006ce2
+    border-radius: 4px
+    img
+        width: 280px
+        height: 399px
+        
+.sixth-screen
+    padding: 80px 0
+    background: url('../img/bg5.jpg') no-repeat
+    
+    .column
+        h3
+            color: #151a1c
+            font-family: "PlexSansBold"
+            font-size: 36px
+            font-weight: 700
+        p
+            color: #49555f
+            font-family: "SourceSansRegular"
+            font-size: 24px
+            font-weight: 400
+            line-height: 32px
+.card
+    border: none
+    margin-top: 50px
+    box-shadow: 0 15px 30px rgba(24, 35, 44, 0.15)
+    border-radius: 6px
+    background-color: #eff2f6
+    max-width: 300px
+    height: 325px
+    box-sizing: border-box
+.expert
+    padding: 0
+.card-body
+    text-align: center
+    padding: 0
+    .expert-name
+        margin-bottom: 0
+        font-family: "SourceSansSemiBold"
+        font-size: 22px
+        font-weight: 400
+    .expert-position
+        color: #49555f
+        font-family: "SourceSansRegular"
+        font-size: 18px
+        font-weight: 400
+        margin: 20px 0
+    .expert-exp
+        color: #49555f
+        font-family: "SourceSansSemiBold"
+        font-size: 16px
+        font-weight: 400
+        img
+            margin-right: 10px
+            vertical-align: top
+.avatar
+    border-radius: 50%
+    margin: 30px auto 30px
+    box-shadow: 0 15px 30px rgba(24, 35, 44, 0.07)
+    img
+        width: 120px
+        height: 120px
+        
+.seventh-screen
+    background: url('../img/bg6.jpg') no-repeat
+    padding: 60px 0 70px
+.steps-header
+    color: $background
+    font-family: "PlexSansBold"
+    font-size: 36px
+    font-weight: 700
+.steps-wrapper
+    margin-top: 52px
+.steps-item
+    margin-bottom: 40px
+.step-img
+    position: relative
+    width: 80px
+    height: 80px
+    box-shadow: 0 15px 30px rgba(32, 41, 48, 0.3)
+    border-radius: 6px
+    background-color: $background
+    margin-right: 30px
+    img
+        margin: 0 auto
+    .step-counter
+        vertical-align: middle
+        text-align: center
+        border-radius: 50%
+        position: absolute
+        right: -10px
+        top: -12px
+        width: 24px
+        height: 24px
+        background-color: #2ec06d
+        color: $background
+        font-family: "SourceSansSemiBold"
+        font-size: 18px
+        font-weight: 400
+        line-height: 20px!important
+        line-height: 28px
+.step-descr
+    p
+        color: #d9e2e9
+        font-family: "SourceSansRegular"
+        font-size: 20px
+        font-weight: 400
+        line-height: 28px
+        span
+            color: $background
+            font-family: "SourceSansBold"
+            font-weight: 700
+.result
+    background-color: #75b998
+    
+.map
+    height: 524px
+@import "media" // Always at the end
