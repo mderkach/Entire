@@ -21,6 +21,7 @@
     <meta name="theme-color" content="#eef2f5">
     <!-- Custom Browsers Color End -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -425,37 +426,32 @@
         </div>
     </section>
     <section class="eighth-screen screen">
-        <div class="maps">
-            <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-            <div id="map" class="row map_wrapper">
-                <script type="text/javascript">
-                    ymaps.ready(init);
-                    var myMap;
-                    var center = [45.038741, 41.978383];
-                    if (window.innerWidth <= 580) {
-                        center = [45.0376079855057, 41.978500746032694];
-                    } else {
-                        center = [45.038741, 41.978383];
-                    };
-
-                    function init() {
-                        myMap = new ymaps.Map("map", {
-                            center: center,
-                            zoom: 17,
-                        });
-                        var myPlacemark = new ymaps.Placemark([45.03869957457819, 41.978371999999986], {}, {
-                            preset: 'islands#redIcon'
-                        });
-                        myMap.geoObjects.add(myPlacemark);
-                        if (window.innerWidth <= 580) {
-                            myMap.behaviors.disable('drag');
-                        };
-                    }
-
-                </script>
+        <div id="map" class="map_wrapper">
+            <div class="container">
+                <div class="row info-wrapper">
+                    <div class="col-5 offset-6 map-info">
+                        <div class="addres">
+                            <p class="bold-heading">Адрес:</p>
+                            <p class="info-descr">Москва, Симферопольский бульвар, д. 13</p>
+                        </div>
+                        <div class="work-info d-flex justify-content-between align-items-center">
+                            <div class="call">
+                                <p class="bold-heading">Позвоните нам:</p>
+                                <p class="info-descr">+7 (495) 105-90-11</p>
+                            </div>
+                            <div class="working-time">
+                                <p class="bold-heading">Время работы:</p>
+                                <p class="info-descr">Пн - Пт: 10:00-19:00</p>
+                            </div>
+                        </div>
+                        <div class="column map-btn">
+                            <button class="green-btn btn">БЕСПЛАТНАЯ ПОДРОБНАЯ КОНСУЛЬТАЦИЯ</button>
+                            <button class="white-btn btn">ОСТАЛИСЬ ВОПРОСЫ?</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
     <footer>
         <div class="container">
