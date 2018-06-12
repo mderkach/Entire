@@ -30,5 +30,6 @@ $(function () {
         if (window.innerWidth <= 580) {
             myMap.behaviors.disable('drag');
         };
-    }
+    };
+    
 });

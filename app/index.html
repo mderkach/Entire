@@ -60,7 +60,7 @@
                     <div class="contacts text-right">
                         <p class="contacts-pre">Свяжитесь с нами:</p>
                         <p class="contacts-nubmer">8 800 999-99-99</p>
-                        <a href="#">Бесплатная консультация</a>
+                        <a href="javascript:;" data-fancybox data-src="#popup">Бесплатная консультация</a>
                     </div>
                 </div>
             </div>
@@ -97,11 +97,11 @@
             </div>
             <div class="buttons-wrapper">
                 <div class="row">
-                    <button class="col green-btn btn">
+                    <button data-fancybox data-src="#popup" class="col green-btn btn">
 	                    БЕСПЛАТНАЯ ПОДРОБНАЯ КОНСУЛЬТАЦИЯ
 	                </button>
                     <div class="col"></div>
-                    <button class="col white-btn btn">
+                    <button data-fancybox data-src="#popup" class="col white-btn btn">
 	                    УЗНАТЬ СТОИМОСТЬ И ВАРИАНТЫ ПОЛУЧЕНИЯ ЛИЦЕНЗИИ
 	                </button>
                 </div>
@@ -161,7 +161,7 @@
                             <p><span>Тонкости/подводные камни:</span> Значимость<br> этих проблем настолько очевидна</p>
                             <div class="hl line"></div>
                             <p><span>Срок получения:</span> 30 дней</p>
-                            <button class="green-btn btn">Cмотреть лицензию</button>
+                            <button data-fancybox data-src="#popup" class="green-btn btn">Cмотреть лицензию</button>
                         </div>
                         <div class="col-1">
                             <div class="vl line"></div>
@@ -191,7 +191,7 @@
                             <p><span>Тонкости/подводные камни:</span> Значимость<br> этих проблем настолько очевидна</p>
                             <div class="hl line"></div>
                             <p><span>Срок получения:</span> 30 дней</p>
-                            <button class="green-btn btn">Cмотреть лицензию</button>
+                            <button data-fancybox data-src="#popup" class="green-btn btn">Cмотреть лицензию</button>
                         </div>
                         <div class="col-1">
                             <div class="vl line"></div>
@@ -221,7 +221,7 @@
                             <p><span>Тонкости/подводные камни:</span> Значимость<br> этих проблем настолько очевидна</p>
                             <div class="hl line"></div>
                             <p><span>Срок получения:</span> 30 дней</p>
-                            <button class="green-btn btn">Cмотреть лицензию</button>
+                            <button data-fancybox data-src="#popup" class="green-btn btn">Cмотреть лицензию</button>
                         </div>
                         <div class="col-1">
                             <div class="vl line"></div>
@@ -251,7 +251,7 @@
                             <p><span>Тонкости/подводные камни:</span> Значимость<br> этих проблем настолько очевидна</p>
                             <div class="hl line"></div>
                             <p><span>Срок получения:</span> 30 дней</p>
-                            <button class="green-btn btn">Cмотреть лицензию</button>
+                            <button data-fancybox data-src="#popup" class="green-btn btn">Cмотреть лицензию</button>
                         </div>
                         <div class="col-1">
                             <div class="vl line"></div>
@@ -281,7 +281,7 @@
                             <p><span>Тонкости/подводные камни:</span> Значимость<br> этих проблем настолько очевидна</p>
                             <div class="hl line"></div>
                             <p><span>Срок получения:</span> 30 дней</p>
-                            <button class="green-btn btn">Cмотреть лицензию</button>
+                            <button data-fancybox data-src="#popup" class="green-btn btn">Cмотреть лицензию</button>
                         </div>
                         <div class="col-1">
                             <div class="vl line"></div>
@@ -310,13 +310,13 @@
             <div class="row consulting">
                 <div class="consulting-item col-12 d-flex justify-content-between align-items-end">
                     <p>Ответим на ваши вопросы,<br> расскажем о подводных камнях<br> и тонкостях, опишем этапы<br> получения лицензии</p>
-                    <button class="green-btn btn">БЕСПЛАТНАЯ ПОДРОБНАЯ КОНСУЛЬТАЦИЯ</button>
+                    <button data-fancybox data-src="#popup" class="green-btn btn">БЕСПЛАТНАЯ ПОДРОБНАЯ КОНСУЛЬТАЦИЯ</button>
                 </div>
                 <div class="hl line"></div>
                 <div class="consulting-item col-12 d-flex justify-content-between align-items-baseline">
                     <p class="align-self-start">Узнайте стоимость и варианты<br> получения лицензии в вашей<br> ситуации
                     </p>
-                    <button class="white-btn btn">УЗНАТЬ СТОИМОСТЬ И ВАРИАНТЫ ПОЛУЧЕНИЯ ЛИЦЕНЗИИ</button>
+                    <button data-fancybox data-src="#popup" class="white-btn btn">УЗНАТЬ СТОИМОСТЬ И ВАРИАНТЫ ПОЛУЧЕНИЯ ЛИЦЕНЗИИ</button>
                 </div>
             </div>
         </div>
@@ -330,7 +330,7 @@
                     <p>Работаем на результат, а не просто<br> готовим документы</p>
                 </div>
                 <div class="blank">
-                    <img src="img/blank.jpg" alt="">
+                    <img id="blank" src="img/blank.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -445,8 +445,8 @@
                             </div>
                         </div>
                         <div class="column map-btn">
-                            <button class="green-btn btn">БЕСПЛАТНАЯ ПОДРОБНАЯ КОНСУЛЬТАЦИЯ</button>
-                            <button class="white-btn btn">ОСТАЛИСЬ ВОПРОСЫ?</button>
+                            <button data-fancybox data-src="#popup" class="green-btn btn">БЕСПЛАТНАЯ ПОДРОБНАЯ КОНСУЛЬТАЦИЯ</button>
+                            <button data-fancybox data-src="#popup" class="white-btn btn">ОСТАЛИСЬ ВОПРОСЫ?</button>
                         </div>
                     </div>
                 </div>
@@ -490,7 +490,21 @@
             </div>
         </div>
     </footer>
-
+    <!--  POPUP  -->
+    <div class="popup" id="popup">
+        <h2>Оставьте заявку</h2>
+        <p>и мы свяжемся с Вами в течении 5 минут</p>
+        <form action="#" method="post" class="popup-form d-flex flex-column justify-content-center align-items-center">
+            <div class="popup-form-row form-group form-row">
+                <input type="text" class="form-input col-12" name="name" placeholder="Введите ваше имя" onfocus="this.placeholder=''" onblur="this.placeholder='Введите ваше имя'" required>
+            </div>
+            <div class="popup-form-row form-group form-row">
+                <input type="tel" class="form-input col-12" name="phone" placeholder="Введите телефон" required>
+            </div>
+            <input type="submit" class="green-btn btn">
+        </form>
+    </div>
+    <!--  POPUP  -->
     <script src="js/scripts.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 </body>
