@@ -45,21 +45,21 @@ if(!empty($_POST['position'])) {
 } else {
     $error = true;
 }
-if(isset($_POST['check_form']) && $_POST['check_form'] == 'ok') {
+/*if(isset($_POST['check_form']) && $_POST['check_form'] == 'ok') {
         $check_form = htmlspecialchars(trim($_POST['check_form']), ENT_QUOTES);
     } else {
         $error2 = true;
-    }
+    }*/
 //preparing mail
 if(!$error) {
     $from = '';
-    $subject = '[Алстрой26.рф] Заявка: '.$position;
+    $subject = '[Лицензии] Заявка: '.$position;
 
     $headers = "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=utf-8\n";
     $headers .= "Content-Transfer-Encoding: 8bit\n";
     $from = '=?utf-8?B?'. base64_encode($from).'?=';
-    $headers .= "From: ".$from." <Алстрой26.рф>\n"; 
+    $headers .= "From: ".$from." <mderkach.github.io/Entire/app>\n"; 
     $subject = '=?utf-8?B?'. base64_encode($subject).'?=';
 
     $content = "<html><body><table border='1' style='border-color: #666; border-collapse: collapse;' cellpadding='5'>" .
@@ -95,7 +95,7 @@ if(!$error) {
     $fieldsarray = array("mail");
     $checker = botShallNotPass($fieldsarray);
     if ( $checker != 1 ){
-        mail("st.alstroi@yandex.ru", $subject, $content, $headers);   
+        mail("derkach94@gmail.com", $subject, $content, $headers);   
     }
     else{
         echo "По всей видимости вы бот:) Вы смогли заполнить скрытые поля, созданные для бота.";
