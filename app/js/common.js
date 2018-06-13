@@ -31,5 +31,14 @@ $(function () {
             myMap.behaviors.disable('drag');
         };
     };
-    $('input[name="phone"]').inputmask("+7(999)999-99-99")
+    $('input[name="phone"]').inputmask("+7(999)999-99-99");
+    var window_width = $(window).width(),
+        window_height = window.innerHeight,
+        header_height = $(".default-header").height(),
+        header_height_static = $(".site-header.static").outerHeight(),
+        fitscreen = window_height - header_height;
+
+
+    $(".fullscreen").css("height", window_height)
+    $(".fitscreen").css("height", fitscreen);
 });
