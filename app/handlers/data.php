@@ -53,13 +53,13 @@ if(!empty($_POST['position'])) {
 //preparing mail
 if(!$error) {
     $from = '';
-    $subject = '[Лицензии] Заявка: '.$position;
+    $subject = '[Недра] Заявка: '.$position;
 
     $headers = "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=utf-8\n";
     $headers .= "Content-Transfer-Encoding: 8bit\n";
     $from = '=?utf-8?B?'. base64_encode($from).'?=';
-    $headers .= "From: ".$from." <mderkach.github.io/Entire/app>\n"; 
+    $headers .= "From: ".$from." <leadopyimizer.ru/nedra>\n"; 
     $subject = '=?utf-8?B?'. base64_encode($subject).'?=';
 
     $content = "<html><body><table border='1' style='border-color: #666; border-collapse: collapse;' cellpadding='5'>" .
@@ -95,7 +95,7 @@ if(!$error) {
     $fieldsarray = array("mail");
     $checker = botShallNotPass($fieldsarray);
     if ( $checker != 1 ){
-        mail("derkach94@gmail.com", $subject, $content, $headers);   
+        mail("Lex@iniure.ru", $subject, $content, $headers);   
     }
     else{
         echo "По всей видимости вы бот:) Вы смогли заполнить скрытые поля, созданные для бота.";
