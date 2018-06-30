@@ -12,11 +12,11 @@ $(function () {
     });
     ymaps.ready(init);
     var myMap;
-    var center = [55.65583971319176, 37.611263440505965];
+    var center = [45.040014817322394,38.986450246063235];
     if (window.innerWidth <= 770) {
-        center = [55.65474564549715, 37.6071435674591];
+        center = [45.03890423653294,38.982308915344255];
     } else {
-        center = [55.65583971319176, 37.611263440505965];
+        center = [45.040014817322394,38.986450246063235];
     };
 
     function init() {
@@ -24,7 +24,7 @@ $(function () {
             center: center,
             zoom: 17,
         });
-        var myPlacemark = new ymaps.Placemark([55.6558435691071, 37.60730449999999], {}, {
+        var myPlacemark = new ymaps.Placemark([45.0404255745826,38.982266000000024], {}, {
             preset: 'islands#redIcon'
         });
         myMap.geoObjects.add(myPlacemark);
