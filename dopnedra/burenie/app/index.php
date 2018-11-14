@@ -172,7 +172,7 @@
                     <div class="col-12 col-sm-4">
                         <div class="bullit d-flex justify-content-start align-items-start">
                             <img src="img/icon-bust.png" alt="" class="bullit-img">
-                            <p class="bullit-descr">Эксперты с опытом<br> работы более<br> 10 лет</p>
+                            <p class="bullit-descr">Буровые мастера<br> с опытом работы<br> от 10 лет</p>
                         </div>
                     </div>
                 </div>
@@ -538,6 +538,7 @@
                     <div class="contacts text-right">
                         <p onclick="location.href='tel:+78612051024'" class="contacts-nubmer">+7 (861) 205-10-24</p>
                         <p onclick="location.href='tel:+79181889177'" class="contacts-nubmer">+7 (918) 188-91-77</p>
+                        <a class="mail-consult" href="mailto:lex@iniure.ru">lex@iniure.ru</a>
                         <a href="javascript:;" data-fancybox="" data-src="#popup-header">Бесплатная консультация</a>
                     </div>
                 </div>
