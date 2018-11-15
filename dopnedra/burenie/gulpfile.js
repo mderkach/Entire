@@ -14,10 +14,10 @@ var gulp          = require('gulp'),
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		// server: {
-		// 	baseDir: 'app'
-		// },
-		proxy: 'nedra',
+		server: {
+			baseDir: 'app'
+		},
+		//proxy: 'nedra',
 		notify: false,
 		// open: false,
 		// online: false, // Work Offline Without Internet Connection
